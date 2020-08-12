@@ -1,0 +1,85 @@
+nes (52 sloc) 1.98 KB
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+    <style>
+        .display-4 {
+            text-align: center;
+        }
+
+        .mainBody {
+            padding: 100px;
+        }
+        .searchEl {
+            padding-right: 15px;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+
+<body>
+    <div class="mainBody">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">New York Times Search</h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+
+
+
+        <label for="basic-url">Search Term</label>
+        <div class="input-group mb-3">
+            <input id ="search" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+        </div>
+
+        <label for="basic-url">Number of Records to Retrieve</label>
+        <div class="input-group mb-3">
+            <input id ="number" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+        </div>
+
+        <label for="basic-url">Start Year(Optional)</label>
+        <div class="input-group mb-3">
+            <input id="yearStart" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+        </div>
+
+        <label for="basic-url">End Year(Optional)</label>
+        <div class="input-group mb-3">
+            <input id="yearEnd" type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+
+        </div>
+
+
+
+        <div>
+            <span data-id="search" class="glyphicon glyphicon-name searchEl">Search</span>
+            <span class="clearEl">Clear</span>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./jscript.js"></script>
+
+</body>
+
+</html>
